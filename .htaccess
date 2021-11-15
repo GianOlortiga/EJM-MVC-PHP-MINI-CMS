@@ -1,0 +1,8 @@
+RewriteEngine on
+Options +FollowSymLinks
+RewriteRule ^(.*)/$		index.php?view=$1
+RewriteRule ^(.*)/(.*)/$		index.php?view=$1&admin=$2
+RewriteRule ^(.*)/(.*)/(.*)/$		index.php?view=$1&admin=$2&accion=$3 
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/$		index.php?view=$1&admin=$2&accion=$3&id=$4
+RewriteRule ^(.*)/(.*)/(.*)/(.*)/(.*)/$		index.php?view=$1&admin=$2&accion=$3&id=&$4&estado=$5
+
